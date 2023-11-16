@@ -1,0 +1,54 @@
+body{
+    background:#00F3FF;
+}
+.heading{
+    width: 80%;
+    font-size: 22px;
+}
+#camera,#result{
+    border: 2px dashed black;
+    width: 350px;
+    height:300px;
+}
+p{
+    width: 100%;
+    font-size: 22px;
+    padding-right: 50px;
+}
+span{
+    font-size: 18px;
+    word-spacing: 15px;
+}
+.container{
+    background: linear-gradient(red,blue);
+}
+label{
+    background-color: cyan;
+    border-radius: 20%;
+    padding:10px;
+    font-weight: bold;
+}
+.webcam{
+    background-color: cyan;
+    width:370px;
+    height: 450px;
+}
+.snap{
+    background-color: lightgreen;
+    width:370px;
+    height: 450px;
+}
+#object{
+    background-color: lightgreen;
+}
+#accuracy{
+    background-color: cyan;
+}
+#object1{
+    background-color: lightgreen;
+    width:150px;
+}
+#accuracy1{
+    background-color: cyan;
+    width:150px;
+}

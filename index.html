@@ -1,0 +1,63 @@
+ 
+<html>
+    <head>
+      <title>Image recognition</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
+    
+    </head>
+  
+    <body>
+    <div class="container">
+      
+      <center>
+        <h3 class="btn btn-default heading">face recognition</h3>
+        <br><br>
+  
+        <p class="btn btn-default" style="font-size: 22px;">Model is trained to identify the following people: <span> mother    father    brother    me</span></p>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4">
+              <div class="webcam">
+            <label id="object">Webcam View - </label>
+            <br><br>
+            <div id="camera"></div>
+            <br><br>
+            <button onclick="captureImage()" class="btn btn-info" id="object">Capture Image</button>
+          </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-4">
+              <label>object</label>
+              <br><br>
+              <p class="btn btn-default" style="font-size: 15px;" id="object1"><span id="result_object_name"></span>  </p>
+              <br><br>
+              <label>Accuracy</label>
+              <br><br>
+              <p class="btn btn-default" style="font-size: 15px;" id="accuracy1"><span id="result_object_accuracy"></span> </p>
+            </div>
+          <div class="col-lg-4 col-sm-4 col-xs-4">
+            <div class="snap">
+            <label id="accuracy">Snap - </label>
+            <br><br>
+            <div id="result"></div>
+            <br><br>
+            <button onclick="identifyImage()" class="btn btn-success" id="accuracy">Identify Image</button>
+          </div>
+        </div>
+        </div>
+  <br><br>
+      </center>
+  
+    </div>
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
